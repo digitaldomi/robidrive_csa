@@ -32,3 +32,15 @@ D:\Dokumente Studium\CSA\Übungen\Robot\RobotView\obj\Debug\RobotView.SwitchView
 D:\Dokumente Studium\CSA\Übungen\Robot\RobotView\obj\Debug\RobotView.csproj.GenerateResource.Cache
 D:\Dokumente Studium\CSA\Übungen\Robot\RobotView\obj\Debug\RobotView.dll
 D:\Dokumente Studium\CSA\Übungen\Robot\RobotView\obj\Debug\RobotView.pdb
+C:\Users\Dominic\Documents\csa\RobotView\bin\Debug\RobotView.dll
+C:\Users\Dominic\Documents\csa\RobotView\bin\Debug\RobotView.pdb
+C:\Users\Dominic\Documents\csa\RobotView\bin\Debug\RobotCtrl.dll
+C:\Users\Dominic\Documents\csa\RobotView\bin\Debug\RobotCtrl.pdb
+C:\Users\Dominic\Documents\csa\RobotView\obj\Debug\RobotView.csprojResolveAssemblyReference.cache
+C:\Users\Dominic\Documents\csa\RobotView\obj\Debug\RobotView.ConsoleView.resources
+C:\Users\Dominic\Documents\csa\RobotView\obj\Debug\RobotView.LedView.resources
+C:\Users\Dominic\Documents\csa\RobotView\obj\Debug\RobotView.Resource1.resources
+C:\Users\Dominic\Documents\csa\RobotView\obj\Debug\RobotView.SwitchView.resources
+C:\Users\Dominic\Documents\csa\RobotView\obj\Debug\RobotView.csproj.GenerateResource.Cache
+C:\Users\Dominic\Documents\csa\RobotView\obj\Debug\RobotView.dll
+C:\Users\Dominic\Documents\csa\RobotView\obj\Debug\RobotView.pdb

@@ -19,3 +19,8 @@ C:\Users\Dominic\Documents\csa\RobotIO\bin\Debug\RobotIO.dll
 C:\Users\Dominic\Documents\csa\RobotIO\bin\Debug\RobotIO.pdb
 C:\Users\Dominic\Documents\csa\RobotIO\obj\Debug\RobotIO.dll
 C:\Users\Dominic\Documents\csa\RobotIO\obj\Debug\RobotIO.pdb
+D:\Dokumente Studium\CSA\Übungen\RobotGit\RobotIO\bin\Debug\Lib\GPIOLib.dll
+D:\Dokumente Studium\CSA\Übungen\RobotGit\RobotIO\bin\Debug\RobotIO.dll
+D:\Dokumente Studium\CSA\Übungen\RobotGit\RobotIO\bin\Debug\RobotIO.pdb
+D:\Dokumente Studium\CSA\Übungen\RobotGit\RobotIO\obj\Debug\RobotIO.dll
+D:\Dokumente Studium\CSA\Übungen\RobotGit\RobotIO\obj\Debug\RobotIO.pdb

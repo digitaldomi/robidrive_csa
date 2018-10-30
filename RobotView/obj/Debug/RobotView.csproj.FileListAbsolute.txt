@@ -44,3 +44,15 @@ C:\Users\Dominic\Documents\csa\RobotView\obj\Debug\RobotView.SwitchView.resource
 C:\Users\Dominic\Documents\csa\RobotView\obj\Debug\RobotView.csproj.GenerateResource.Cache
 C:\Users\Dominic\Documents\csa\RobotView\obj\Debug\RobotView.dll
 C:\Users\Dominic\Documents\csa\RobotView\obj\Debug\RobotView.pdb
+D:\Dokumente Studium\CSA\Übungen\RobotGit\RobotView\bin\Debug\RobotView.dll
+D:\Dokumente Studium\CSA\Übungen\RobotGit\RobotView\bin\Debug\RobotView.pdb
+D:\Dokumente Studium\CSA\Übungen\RobotGit\RobotView\bin\Debug\RobotCtrl.dll
+D:\Dokumente Studium\CSA\Übungen\RobotGit\RobotView\bin\Debug\RobotCtrl.pdb
+D:\Dokumente Studium\CSA\Übungen\RobotGit\RobotView\obj\Debug\RobotView.csprojResolveAssemblyReference.cache
+D:\Dokumente Studium\CSA\Übungen\RobotGit\RobotView\obj\Debug\RobotView.ConsoleView.resources
+D:\Dokumente Studium\CSA\Übungen\RobotGit\RobotView\obj\Debug\RobotView.LedView.resources
+D:\Dokumente Studium\CSA\Übungen\RobotGit\RobotView\obj\Debug\RobotView.Resource1.resources
+D:\Dokumente Studium\CSA\Übungen\RobotGit\RobotView\obj\Debug\RobotView.SwitchView.resources
+D:\Dokumente Studium\CSA\Übungen\RobotGit\RobotView\obj\Debug\RobotView.csproj.GenerateResource.Cache
+D:\Dokumente Studium\CSA\Übungen\RobotGit\RobotView\obj\Debug\RobotView.dll
+D:\Dokumente Studium\CSA\Übungen\RobotGit\RobotView\obj\Debug\RobotView.pdb

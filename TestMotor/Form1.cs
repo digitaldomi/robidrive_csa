@@ -5,8 +5,9 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using RobotView;
+using RobotCtrl;
 
 namespace TestMotor
 {
@@ -15,6 +16,10 @@ namespace TestMotor
         public Form1()
         {
             InitializeComponent();
+
+            motorCtrlViewLeft.MotorCtrl = new MotorCtrl(Constants.IOMotorCtrlLeft);
+            motorCtrlViewRight.MotorCtrl = new MotorCtrl(Constants.IOMotorCtrlRight);
+            driveCtrlView.DriveCtrl = new DriveCtrl(Constants.IODriveCtrl);
         }
     }
 }

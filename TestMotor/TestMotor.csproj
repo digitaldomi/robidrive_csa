@@ -1,17 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6EFA7D7F-BCDA-4557-9B83-52F2913729AF}</ProjectGuid>
+    <ProjectGuid>{530852CE-2EF9-4ADE-9FEA-C96FB01B5E3E}</ProjectGuid>
+    <ProjectTypeGuids>{6AFDAB0D-95EF-424D-8A49-099ECD40B0FF};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TestMotor</RootNamespace>
     <AssemblyName>TestMotor</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkIdentifier>WindowsEmbeddedCompact</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.9</TargetFrameworkVersion>
+    <TargetFrameworkTargetsVersion>v8.0</TargetFrameworkTargetsVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -37,11 +39,8 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
@@ -66,34 +65,22 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RobotCtrl\RobotCtrl.csproj">
-      <Project>{61116303-96a0-4fee-aba1-a4953e00dd0d}</Project>
+      <Project>{61116303-96A0-4FEE-ABA1-A4953E00DD0D}</Project>
       <Name>RobotCtrl</Name>
     </ProjectReference>
     <ProjectReference Include="..\RobotIO\RobotIO.csproj">
-      <Project>{9016fee3-2582-484e-83a4-7346f43ec433}</Project>
+      <Project>{9016FEE3-2582-484E-83A4-7346F43EC433}</Project>
       <Name>RobotIO</Name>
     </ProjectReference>
     <ProjectReference Include="..\RobotView\RobotView.csproj">
-      <Project>{d48dffde-5681-4254-9119-739f69875be0}</Project>
+      <Project>{D48DFFDE-5681-4254-9119-739F69875BE0}</Project>
       <Name>RobotView</Name>
     </ProjectReference>
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkTargetsVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

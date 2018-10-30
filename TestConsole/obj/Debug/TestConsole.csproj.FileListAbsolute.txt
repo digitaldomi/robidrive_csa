@@ -58,3 +58,18 @@ C:\Users\Dominic\Documents\csa\TestConsole\obj\Debug\TestConsole.Properties.Reso
 C:\Users\Dominic\Documents\csa\TestConsole\obj\Debug\TestConsole.csproj.GenerateResource.Cache
 C:\Users\Dominic\Documents\csa\TestConsole\obj\Debug\TestConsole.exe
 C:\Users\Dominic\Documents\csa\TestConsole\obj\Debug\TestConsole.pdb
+D:\Dokumente Studium\CSA\Übungen\RobotGit\TestConsole\bin\Debug\Lib\GPIOLib.dll
+D:\Dokumente Studium\CSA\Übungen\RobotGit\TestConsole\bin\Debug\TestConsole.exe
+D:\Dokumente Studium\CSA\Übungen\RobotGit\TestConsole\bin\Debug\TestConsole.pdb
+D:\Dokumente Studium\CSA\Übungen\RobotGit\TestConsole\bin\Debug\RobotCtrl.dll
+D:\Dokumente Studium\CSA\Übungen\RobotGit\TestConsole\bin\Debug\RobotIO.dll
+D:\Dokumente Studium\CSA\Übungen\RobotGit\TestConsole\bin\Debug\RobotView.dll
+D:\Dokumente Studium\CSA\Übungen\RobotGit\TestConsole\bin\Debug\RobotCtrl.pdb
+D:\Dokumente Studium\CSA\Übungen\RobotGit\TestConsole\bin\Debug\RobotIO.pdb
+D:\Dokumente Studium\CSA\Übungen\RobotGit\TestConsole\bin\Debug\RobotView.pdb
+D:\Dokumente Studium\CSA\Übungen\RobotGit\TestConsole\obj\Debug\TestConsole.csprojResolveAssemblyReference.cache
+D:\Dokumente Studium\CSA\Übungen\RobotGit\TestConsole\obj\Debug\TestConsole.Form1.resources
+D:\Dokumente Studium\CSA\Übungen\RobotGit\TestConsole\obj\Debug\TestConsole.Properties.Resources.resources
+D:\Dokumente Studium\CSA\Übungen\RobotGit\TestConsole\obj\Debug\TestConsole.csproj.GenerateResource.Cache
+D:\Dokumente Studium\CSA\Übungen\RobotGit\TestConsole\obj\Debug\TestConsole.exe
+D:\Dokumente Studium\CSA\Übungen\RobotGit\TestConsole\obj\Debug\TestConsole.pdb

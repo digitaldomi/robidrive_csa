@@ -1,0 +1,8 @@
+D:\Dokumente Studium\CSA\Übungen\Robot\TestMotor\obj\Debug\TestMotor.csprojResolveAssemblyReference.cache
+D:\Dokumente Studium\CSA\Übungen\Robot\TestMotor\obj\Debug\TestMotor.Properties.Resources.resources
+D:\Dokumente Studium\CSA\Übungen\Robot\TestMotor\obj\Debug\TestMotor.csproj.GenerateResource.Cache
+D:\Dokumente Studium\CSA\Übungen\Robot\TestMotor\bin\Debug\TestMotor.exe.config
+D:\Dokumente Studium\CSA\Übungen\Robot\TestMotor\bin\Debug\TestMotor.exe
+D:\Dokumente Studium\CSA\Übungen\Robot\TestMotor\bin\Debug\TestMotor.pdb
+D:\Dokumente Studium\CSA\Übungen\Robot\TestMotor\obj\Debug\TestMotor.exe
+D:\Dokumente Studium\CSA\Übungen\Robot\TestMotor\obj\Debug\TestMotor.pdb

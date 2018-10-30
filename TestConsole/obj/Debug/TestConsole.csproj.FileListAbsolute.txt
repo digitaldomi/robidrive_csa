@@ -1,0 +1,45 @@
+d:\lehre\CSA\Robot\TestConsole\bin\Debug\Lib\GPIOLib.dll
+d:\lehre\CSA\Robot\TestConsole\bin\Debug\TestConsole.exe
+d:\lehre\CSA\Robot\TestConsole\bin\Debug\TestConsole.pdb
+d:\lehre\CSA\Robot\TestConsole\bin\Debug\RobotCtrl.dll
+d:\lehre\CSA\Robot\TestConsole\bin\Debug\RobotIO.dll
+d:\lehre\CSA\Robot\TestConsole\bin\Debug\RobotView.dll
+d:\lehre\CSA\Robot\TestConsole\bin\Debug\RobotCtrl.pdb
+d:\lehre\CSA\Robot\TestConsole\bin\Debug\RobotIO.pdb
+d:\lehre\CSA\Robot\TestConsole\bin\Debug\RobotView.pdb
+d:\lehre\CSA\Robot\TestConsole\obj\Debug\TestConsole.csprojResolveAssemblyReference.cache
+d:\lehre\CSA\Robot\TestConsole\obj\Debug\TestConsole.Form1.resources
+d:\lehre\CSA\Robot\TestConsole\obj\Debug\TestConsole.Properties.Resources.resources
+d:\lehre\CSA\Robot\TestConsole\obj\Debug\TestConsole.csproj.GenerateResource.Cache
+d:\lehre\CSA\Robot\TestConsole\obj\Debug\TestConsole.exe
+d:\lehre\CSA\Robot\TestConsole\obj\Debug\TestConsole.pdb
+C:\FileSafe\HSLU\18HS\CSA\RobotProjekt\Robot\TestConsole\bin\Debug\Lib\GPIOLib.dll
+C:\FileSafe\HSLU\18HS\CSA\RobotProjekt\Robot\TestConsole\bin\Debug\TestConsole.exe
+C:\FileSafe\HSLU\18HS\CSA\RobotProjekt\Robot\TestConsole\bin\Debug\TestConsole.pdb
+C:\FileSafe\HSLU\18HS\CSA\RobotProjekt\Robot\TestConsole\bin\Debug\RobotCtrl.dll
+C:\FileSafe\HSLU\18HS\CSA\RobotProjekt\Robot\TestConsole\bin\Debug\RobotIO.dll
+C:\FileSafe\HSLU\18HS\CSA\RobotProjekt\Robot\TestConsole\bin\Debug\RobotView.dll
+C:\FileSafe\HSLU\18HS\CSA\RobotProjekt\Robot\TestConsole\bin\Debug\RobotCtrl.pdb
+C:\FileSafe\HSLU\18HS\CSA\RobotProjekt\Robot\TestConsole\bin\Debug\RobotIO.pdb
+C:\FileSafe\HSLU\18HS\CSA\RobotProjekt\Robot\TestConsole\bin\Debug\RobotView.pdb
+C:\FileSafe\HSLU\18HS\CSA\RobotProjekt\Robot\TestConsole\obj\Debug\TestConsole.csprojResolveAssemblyReference.cache
+C:\FileSafe\HSLU\18HS\CSA\RobotProjekt\Robot\TestConsole\obj\Debug\TestConsole.Form1.resources
+C:\FileSafe\HSLU\18HS\CSA\RobotProjekt\Robot\TestConsole\obj\Debug\TestConsole.Properties.Resources.resources
+C:\FileSafe\HSLU\18HS\CSA\RobotProjekt\Robot\TestConsole\obj\Debug\TestConsole.csproj.GenerateResource.Cache
+C:\FileSafe\HSLU\18HS\CSA\RobotProjekt\Robot\TestConsole\obj\Debug\TestConsole.exe
+C:\FileSafe\HSLU\18HS\CSA\RobotProjekt\Robot\TestConsole\obj\Debug\TestConsole.pdb
+D:\Dokumente Studium\CSA\Übungen\Robot\TestConsole\bin\Debug\Lib\GPIOLib.dll
+D:\Dokumente Studium\CSA\Übungen\Robot\TestConsole\bin\Debug\TestConsole.exe
+D:\Dokumente Studium\CSA\Übungen\Robot\TestConsole\bin\Debug\TestConsole.pdb
+D:\Dokumente Studium\CSA\Übungen\Robot\TestConsole\bin\Debug\RobotCtrl.dll
+D:\Dokumente Studium\CSA\Übungen\Robot\TestConsole\bin\Debug\RobotIO.dll
+D:\Dokumente Studium\CSA\Übungen\Robot\TestConsole\bin\Debug\RobotView.dll
+D:\Dokumente Studium\CSA\Übungen\Robot\TestConsole\bin\Debug\RobotCtrl.pdb
+D:\Dokumente Studium\CSA\Übungen\Robot\TestConsole\bin\Debug\RobotIO.pdb
+D:\Dokumente Studium\CSA\Übungen\Robot\TestConsole\bin\Debug\RobotView.pdb
+D:\Dokumente Studium\CSA\Übungen\Robot\TestConsole\obj\Debug\TestConsole.csprojResolveAssemblyReference.cache
+D:\Dokumente Studium\CSA\Übungen\Robot\TestConsole\obj\Debug\TestConsole.Form1.resources
+D:\Dokumente Studium\CSA\Übungen\Robot\TestConsole\obj\Debug\TestConsole.Properties.Resources.resources
+D:\Dokumente Studium\CSA\Übungen\Robot\TestConsole\obj\Debug\TestConsole.csproj.GenerateResource.Cache
+D:\Dokumente Studium\CSA\Übungen\Robot\TestConsole\obj\Debug\TestConsole.exe
+D:\Dokumente Studium\CSA\Übungen\Robot\TestConsole\obj\Debug\TestConsole.pdb

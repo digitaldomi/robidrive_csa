@@ -1,0 +1,16 @@
+d:\lehre\CSA\Robot\RobotIO\bin\Debug\Lib\GPIOLib.dll
+d:\lehre\CSA\Robot\RobotIO\bin\Debug\RobotIO.dll
+d:\lehre\CSA\Robot\RobotIO\bin\Debug\RobotIO.pdb
+d:\lehre\CSA\Robot\RobotIO\obj\Debug\RobotIO.dll
+d:\lehre\CSA\Robot\RobotIO\obj\Debug\RobotIO.pdb
+C:\FileSafe\HSLU\18HS\CSA\RobotProjekt\Robot\RobotIO\bin\Debug\Lib\GPIOLib.dll
+C:\FileSafe\HSLU\18HS\CSA\RobotProjekt\Robot\RobotIO\bin\Debug\RobotIO.dll
+C:\FileSafe\HSLU\18HS\CSA\RobotProjekt\Robot\RobotIO\bin\Debug\RobotIO.pdb
+C:\FileSafe\HSLU\18HS\CSA\RobotProjekt\Robot\RobotIO\obj\Debug\RobotIO.dll
+C:\FileSafe\HSLU\18HS\CSA\RobotProjekt\Robot\RobotIO\obj\Debug\RobotIO.pdb
+C:\FileSafe\HSLU\18HS\CSA\RobotProjekt\Robot\RobotIO\obj\Debug\RobotIO.csprojResolveAssemblyReference.cache
+D:\Dokumente Studium\CSA\Übungen\Robot\RobotIO\bin\Debug\Lib\GPIOLib.dll
+D:\Dokumente Studium\CSA\Übungen\Robot\RobotIO\bin\Debug\RobotIO.dll
+D:\Dokumente Studium\CSA\Übungen\Robot\RobotIO\bin\Debug\RobotIO.pdb
+D:\Dokumente Studium\CSA\Übungen\Robot\RobotIO\obj\Debug\RobotIO.dll
+D:\Dokumente Studium\CSA\Übungen\Robot\RobotIO\obj\Debug\RobotIO.pdb

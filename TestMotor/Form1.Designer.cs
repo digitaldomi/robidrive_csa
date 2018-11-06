@@ -37,34 +37,25 @@ namespace TestMotor
             // 
             // driveCtrlView
             // 
-            
             this.driveCtrlView.DriveCtrl = null;
-            
             this.driveCtrlView.Location = new System.Drawing.Point(0, 0);
             this.driveCtrlView.Name = "driveCtrlView";
-            
             this.driveCtrlView.Size = new System.Drawing.Size(480, 75);
             this.driveCtrlView.TabIndex = 0;
-            
             // 
             // motorCtrlViewLeft
             // 
-            
-            this.motorCtrlViewLeft.Location = new System.Drawing.Point(477, 81);
+            this.motorCtrlViewLeft.Location = new System.Drawing.Point(0, 81);
             this.motorCtrlViewLeft.MotorCtrl = null;
             this.motorCtrlViewLeft.Name = "motorCtrlViewLeft";
-            
             this.motorCtrlViewLeft.Size = new System.Drawing.Size(494, 330);
             this.motorCtrlViewLeft.TabIndex = 1;
-            
             // 
             // motorCtrlViewRight
             // 
-           
-            this.motorCtrlViewRight.Location = new System.Drawing.Point(3, 81);
+            this.motorCtrlViewRight.Location = new System.Drawing.Point(500, 81);
             this.motorCtrlViewRight.MotorCtrl = null;
             this.motorCtrlViewRight.Name = "motorCtrlViewRight";
-            
             this.motorCtrlViewRight.Size = new System.Drawing.Size(480, 330);
             this.motorCtrlViewRight.TabIndex = 2;
             // 
@@ -77,8 +68,6 @@ namespace TestMotor
             this.Controls.Add(this.driveCtrlView);
             this.Controls.Add(this.motorCtrlViewLeft);
             this.Controls.Add(this.motorCtrlViewRight);
-            
-            this.Location = new System.Drawing.Point(0, 0);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);

@@ -24,3 +24,4 @@ D:\Dokumente Studium\CSA\Übungen\RobotGit\RobotIO\bin\Debug\RobotIO.dll
 D:\Dokumente Studium\CSA\Übungen\RobotGit\RobotIO\bin\Debug\RobotIO.pdb
 D:\Dokumente Studium\CSA\Übungen\RobotGit\RobotIO\obj\Debug\RobotIO.dll
 D:\Dokumente Studium\CSA\Übungen\RobotGit\RobotIO\obj\Debug\RobotIO.pdb
+D:\Dokumente Studium\CSA\Übungen\RobotGit\RobotIO\obj\Debug\RobotIO.csprojResolveAssemblyReference.cache

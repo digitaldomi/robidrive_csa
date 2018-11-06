@@ -20,6 +20,8 @@ namespace Testat
         RobotConsole rc;
         private bool ledblink;
         private bool currentLedState;
+        int objectcount;
+        bool is_running = false;
         enum State { WAIT_FOR_START, WAIT_FOR_START_INIT, DRIVE_FORWARD, DRIVE_FORWARD_INIT, TURN, TURN_INIT, DRIVE_BACK, DRIVE_BACK_INIT, STOP, STOP_INIT};
         //private Drive Drive { get; set; }
         #endregion
@@ -51,7 +53,7 @@ namespace Testat
 
             Init();
             radarView.Radar = robot.Radar;
-            radarView.TooClose += RadarView_TooClose;
+            //radarView.TooClose += RadarView_TooClose;
             consoleView1.RobotConsole = robot.RobotConsole;
 
             commonRunParameters1.AccelerationChanged += AccelerationChanged;
@@ -64,17 +66,21 @@ namespace Testat
 
             Thread blinkLed = new Thread(new ThreadStart(blink_led));
             Thread drive = new Thread(new ThreadStart(drive_robot));
+            Thread object_det = new Thread(new ThreadStart(object_detect));
 
             blinkLed.Start();
             drive.Start();
+            object_det.Start();
 
             this.ledblink = false;
+
+
         }
 
-        private void RadarView_TooClose(object sender, EventArgs e)
+       /*private void RadarView_TooClose(object sender, EventArgs e)
         {
             robot.Drive.Stop();
-        }
+        }*/
 
         private void ButtonStop_Click(object sender, EventArgs e)
         {
@@ -145,20 +151,46 @@ namespace Testat
             }
         }
 
+        private void object_detect()
+        {
+
+            float distance = 0;
+            int counter= 0;
+            bool object_detected = false;
+            while (true)
+            {
+                Thread.Sleep(50);
+                distance = this.robot.Radar.Distance;
+                if (distance < 700)
+                {
+                    counter++;
+                    if(counter == 5 && object_detected == false)
+                    {
+                        objectcount++;
+                        object_detected = true;
+                    }
+                }
+                else  {
+                    object_detected = false;
+                    counter = 0;
+                }  
+            }
+        }
+
         private void drive_robot()
         {
             while (true)
             {
-                //State state = new State();
-                //state = State.WAIT_FOR_START_INIT;
 
                 ledblink = false;
+                objectcount = 0;
                 robot.Drive.Position = new PositionInfo(0, 0, 0);
 
                 while ((!rc[Switches.Switch2].SwitchEnabled)) { Thread.Sleep(5); }
+                objectcount = 0;
+                is_running = true;
                 ledblink = true;
-                this.robot.Drive.RunLine((float)2.5, (float)0.2, (float)0.2);
-                Thread.Sleep(1000);
+                this.robot.Drive.RunLine((float)2.5, (float)1, (float)1);
 
                 while (!this.robot.Drive.Done) { Thread.Sleep(5); }
                 Thread.Sleep(1000);
@@ -167,10 +199,13 @@ namespace Testat
 
                 while (!this.robot.Drive.Done) { Thread.Sleep(5); }
 
-                this.robot.Drive.RunLine((float)2.5, (float)0.2, (float)0.2);
+                this.robot.Drive.RunLine((float)2.5, (float)1, (float)1);
                 Thread.Sleep(1000);
-                ledblink = false;
 
+                while (!this.robot.Drive.Done) { Thread.Sleep(5); }
+
+                ledblink = false;
+                is_running = false;
                 while ((rc[Switches.Switch2].SwitchEnabled)) { Thread.Sleep(5); }
                
 
@@ -178,75 +213,11 @@ namespace Testat
 
 
 
-            //                state = State.WAIT_FOR_START;
-            //            break;
+        }
 
-            //Thread.Sleep(500);
-            //while (true)
-            //{
-            //    Thread.Sleep(20);
-            //    switch (state)
-            //    {
-            //        case State.WAIT_FOR_START_INIT:
-            //            ledblink = false;
-            //            //this.labelCount.Text = "0";
-            //            robot.Drive.Position = new PositionInfo(0, 0, 0);
-            //            if (!rc[Switches.Switch2].SwitchEnabled)
-            //                state = State.WAIT_FOR_START;
-            //            break;
-            //        case State.WAIT_FOR_START:
-            //            if (rc[Switches.Switch2].SwitchEnabled)
-            //            {
-            //                state = State.DRIVE_FORWARD_INIT;
-            //            }
-            //            break;
-            //        case State.DRIVE_FORWARD_INIT:
-            //            ledblink = true;
-            //            this.robot.Drive.RunLine((float)2.5, (float)0.2, (float)0.2);
-            //            Thread.Sleep(2000);
-            //            state = State.DRIVE_FORWARD;
-            //            break;
-            //        case State.DRIVE_FORWARD:
-            //            if (this.robot.Drive.Done)
-            //            {
-            //                state = State.TURN_INIT;
-            //                Thread.Sleep(2000);
-            //            }
-            //            break;
-            //        case State.TURN_INIT:
-            //            this.robot.Drive.RunTurn(180,0.2f,0.2f);
-            //            Thread.Sleep(2000);
-            //            state = State.TURN;
-            //            break;
-            //        case State.TURN:
-            //            if (this.robot.Drive.Done)
-            //            {
-            //                state = State.DRIVE_BACK_INIT;
-            //                Thread.Sleep(2000);
-            //            }
-            //            break;
-            //        case State.DRIVE_BACK_INIT:
-            //            this.robot.Drive.RunLine((float)2.5, (float)0.2, (float)0.2);
-            //            Thread.Sleep(2000);
-            //            state = State.DRIVE_BACK;
-            //            break;
-            //        case State.DRIVE_BACK:
-            //            if (this.robot.Drive.Done)
-            //            {
-            //                state = State.STOP_INIT;
-            //                Thread.Sleep(2000);
-            //            }
-            //            break;
-
-            //        case State.STOP_INIT:
-            //            ledblink = false;
-            //            state = State.STOP;
-            //            break;
-            //        case State.STOP:
-            //            state = State.WAIT_FOR_START_INIT;
-            //            break;
-            //    }
-            //}
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if(is_running) labelCount.Text = objectcount.ToString();
         }
     }
 }

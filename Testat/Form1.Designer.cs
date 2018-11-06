@@ -41,6 +41,7 @@ namespace Testat
             this.radarView = new RobotView.RadarView();
             this.driveView1 = new RobotView.DriveView();
             this.labelCount = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer();
             this.SuspendLayout();
             // 
             // buttonHalt
@@ -133,6 +134,11 @@ namespace Testat
             this.labelCount.Text = "0";
             this.labelCount.ParentChanged += new System.EventHandler(this.label1_ParentChanged);
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -168,5 +174,6 @@ namespace Testat
         private RadarView radarView;
         private DriveView driveView1;
         private System.Windows.Forms.Label labelCount;
+        private System.Windows.Forms.Timer timer1;
     }
 }

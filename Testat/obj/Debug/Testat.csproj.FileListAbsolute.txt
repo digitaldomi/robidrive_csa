@@ -1,0 +1,15 @@
+D:\Dokumente Studium\CSA\Übungen\RobotGit\Testat\obj\Debug\Testat.csprojResolveAssemblyReference.cache
+D:\Dokumente Studium\CSA\Übungen\RobotGit\Testat\obj\Debug\Testat.Properties.Resources.resources
+D:\Dokumente Studium\CSA\Übungen\RobotGit\Testat\obj\Debug\Testat.csproj.GenerateResource.Cache
+D:\Dokumente Studium\CSA\Übungen\RobotGit\Testat\obj\Debug\Testat.Form1.resources
+D:\Dokumente Studium\CSA\Übungen\RobotGit\Testat\bin\Debug\Lib\GPIOLib.dll
+D:\Dokumente Studium\CSA\Übungen\RobotGit\Testat\bin\Debug\Testat.exe
+D:\Dokumente Studium\CSA\Übungen\RobotGit\Testat\bin\Debug\Testat.pdb
+D:\Dokumente Studium\CSA\Übungen\RobotGit\Testat\bin\Debug\RobotCtrl.dll
+D:\Dokumente Studium\CSA\Übungen\RobotGit\Testat\bin\Debug\RobotIO.dll
+D:\Dokumente Studium\CSA\Übungen\RobotGit\Testat\bin\Debug\RobotView.dll
+D:\Dokumente Studium\CSA\Übungen\RobotGit\Testat\bin\Debug\RobotCtrl.pdb
+D:\Dokumente Studium\CSA\Übungen\RobotGit\Testat\bin\Debug\RobotIO.pdb
+D:\Dokumente Studium\CSA\Übungen\RobotGit\Testat\bin\Debug\RobotView.pdb
+D:\Dokumente Studium\CSA\Übungen\RobotGit\Testat\obj\Debug\Testat.exe
+D:\Dokumente Studium\CSA\Übungen\RobotGit\Testat\obj\Debug\Testat.pdb

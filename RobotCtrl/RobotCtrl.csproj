@@ -43,6 +43,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constants.cs" />
+    <Compile Include="Drive\Drive.cs" />
+    <Compile Include="Drive\DriveInfo.cs" />
+    <Compile Include="Drive\Track.cs" />
+    <Compile Include="Drive\TrackArcLeft.cs" />
+    <Compile Include="Drive\TrackArcRight.cs" />
+    <Compile Include="Drive\TrackLine.cs" />
+    <Compile Include="Drive\TrackTurn.cs" />
     <Compile Include="Engine\DriveCtrl.cs" />
     <Compile Include="Engine\MotorCtrl.cs" />
     <Compile Include="Input\DigitalIn.cs" />
@@ -52,7 +59,10 @@
     <Compile Include="Output\DigitalOut.cs" />
     <Compile Include="Output\Led.cs" />
     <Compile Include="Output\LedEventArgs.cs" />
+    <Compile Include="PositionInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Radar\Radar.cs" />
+    <Compile Include="Robot.cs" />
     <Compile Include="RobotConsole.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkTargetsVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />

@@ -1,0 +1,14 @@
+D:\Dokumente Studium\CSA\Übungen\RobotGit\TestDrive\bin\Debug\Lib\GPIOLib.dll
+D:\Dokumente Studium\CSA\Übungen\RobotGit\TestDrive\bin\Debug\TestDrive.exe
+D:\Dokumente Studium\CSA\Übungen\RobotGit\TestDrive\bin\Debug\TestDrive.pdb
+D:\Dokumente Studium\CSA\Übungen\RobotGit\TestDrive\bin\Debug\RobotCtrl.dll
+D:\Dokumente Studium\CSA\Übungen\RobotGit\TestDrive\bin\Debug\RobotIO.dll
+D:\Dokumente Studium\CSA\Übungen\RobotGit\TestDrive\bin\Debug\RobotView.dll
+D:\Dokumente Studium\CSA\Übungen\RobotGit\TestDrive\bin\Debug\RobotCtrl.pdb
+D:\Dokumente Studium\CSA\Übungen\RobotGit\TestDrive\bin\Debug\RobotIO.pdb
+D:\Dokumente Studium\CSA\Übungen\RobotGit\TestDrive\bin\Debug\RobotView.pdb
+D:\Dokumente Studium\CSA\Übungen\RobotGit\TestDrive\obj\Debug\TestDrive.csprojResolveAssemblyReference.cache
+D:\Dokumente Studium\CSA\Übungen\RobotGit\TestDrive\obj\Debug\TestDrive.Properties.Resources.resources
+D:\Dokumente Studium\CSA\Übungen\RobotGit\TestDrive\obj\Debug\TestDrive.csproj.GenerateResource.Cache
+D:\Dokumente Studium\CSA\Übungen\RobotGit\TestDrive\obj\Debug\TestDrive.exe
+D:\Dokumente Studium\CSA\Übungen\RobotGit\TestDrive\obj\Debug\TestDrive.pdb

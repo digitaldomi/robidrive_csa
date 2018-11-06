@@ -20,4 +20,3 @@ D:\Dokumente Studium\CSA\Übungen\RobotGit\RobotCtrl\bin\Debug\RobotCtrl.dll
 D:\Dokumente Studium\CSA\Übungen\RobotGit\RobotCtrl\bin\Debug\RobotCtrl.pdb
 D:\Dokumente Studium\CSA\Übungen\RobotGit\RobotCtrl\obj\Debug\RobotCtrl.dll
 D:\Dokumente Studium\CSA\Übungen\RobotGit\RobotCtrl\obj\Debug\RobotCtrl.pdb
-D:\Dokumente Studium\CSA\Übungen\RobotGit\RobotCtrl\obj\Debug\RobotCtrl.csprojResolveAssemblyReference.cache

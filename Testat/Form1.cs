@@ -16,11 +16,12 @@ namespace Testat
     {
         #region members
         private Robot robot;
+        //private Drive drive;
         RobotConsole rc;
         private bool ledblink;
         private bool currentLedState;
         enum State { WAIT_FOR_START, WAIT_FOR_START_INIT, DRIVE_FORWARD, DRIVE_FORWARD_INIT, TURN, TURN_INIT, DRIVE_BACK, DRIVE_BACK_INIT, STOP, STOP_INIT};
-        public Drive Drive { get; set; }
+        //private Drive Drive { get; set; }
         #endregion
 
         #region constructor & destructor
@@ -38,6 +39,7 @@ namespace Testat
                 (rc[Switches.Switch4]).SwitchStateChanged += (o, e) => (rc[Leds.Led4]).LedEnabled = (rc[Switches.Switch4]).SwitchEnabled;
             }*/
 
+            //this.drive = new Drive();
             robot = new Robot();        // neuen Roboter erstellen
             robot.Drive.Power = true;   // Stromversorgung der Motoren (im DriveCtrl) einschalten
 
@@ -145,49 +147,106 @@ namespace Testat
 
         private void drive_robot()
         {
-            State state = new State();
-            state = State.WAIT_FOR_START_INIT;
             while (true)
             {
-                Thread.Sleep(5);
-                switch (state)
-                {
-                    case State.WAIT_FOR_START_INIT:
-                        state = State.WAIT_FOR_START;
-                        break;
-                    case State.WAIT_FOR_START:
-                        (rc[Switches.Switch2]).SwitchStateChanged += (o, e) => state = State.DRIVE_FORWARD_INIT;
-                        
-                        break;
-                    case State.DRIVE_FORWARD_INIT:
-                        ledblink = true;
-                        this.Drive.RunLine((float)2.5, 1, 1);
-                        state = State.DRIVE_FORWARD;
-                        break;
-                    case State.DRIVE_FORWARD:
+                //State state = new State();
+                //state = State.WAIT_FOR_START_INIT;
 
-                        break;
-                    case State.TURN_INIT:
+                ledblink = false;
+                robot.Drive.Position = new PositionInfo(0, 0, 0);
 
-                        break;
-                    case State.TURN:
+                while ((!rc[Switches.Switch2].SwitchEnabled)) { Thread.Sleep(5); }
+                ledblink = true;
+                this.robot.Drive.RunLine((float)2.5, (float)0.2, (float)0.2);
+                Thread.Sleep(1000);
 
-                        break;
-                    case State.DRIVE_BACK_INIT:
+                while (!this.robot.Drive.Done) { Thread.Sleep(5); }
+                Thread.Sleep(1000);
+                this.robot.Drive.RunTurn(180, 0.2f, 0.2f);
+                Thread.Sleep(3000);
 
-                        break;
-                    case State.DRIVE_BACK:
+                while (!this.robot.Drive.Done) { Thread.Sleep(5); }
 
-                        break;
+                this.robot.Drive.RunLine((float)2.5, (float)0.2, (float)0.2);
+                Thread.Sleep(1000);
+                ledblink = false;
 
-                    case State.STOP_INIT:
+                while ((rc[Switches.Switch2].SwitchEnabled)) { Thread.Sleep(5); }
+               
 
-                        break;
-                    case State.STOP:
-
-                        break;
-                }
             }
+
+
+
+            //                state = State.WAIT_FOR_START;
+            //            break;
+
+            //Thread.Sleep(500);
+            //while (true)
+            //{
+            //    Thread.Sleep(20);
+            //    switch (state)
+            //    {
+            //        case State.WAIT_FOR_START_INIT:
+            //            ledblink = false;
+            //            //this.labelCount.Text = "0";
+            //            robot.Drive.Position = new PositionInfo(0, 0, 0);
+            //            if (!rc[Switches.Switch2].SwitchEnabled)
+            //                state = State.WAIT_FOR_START;
+            //            break;
+            //        case State.WAIT_FOR_START:
+            //            if (rc[Switches.Switch2].SwitchEnabled)
+            //            {
+            //                state = State.DRIVE_FORWARD_INIT;
+            //            }
+            //            break;
+            //        case State.DRIVE_FORWARD_INIT:
+            //            ledblink = true;
+            //            this.robot.Drive.RunLine((float)2.5, (float)0.2, (float)0.2);
+            //            Thread.Sleep(2000);
+            //            state = State.DRIVE_FORWARD;
+            //            break;
+            //        case State.DRIVE_FORWARD:
+            //            if (this.robot.Drive.Done)
+            //            {
+            //                state = State.TURN_INIT;
+            //                Thread.Sleep(2000);
+            //            }
+            //            break;
+            //        case State.TURN_INIT:
+            //            this.robot.Drive.RunTurn(180,0.2f,0.2f);
+            //            Thread.Sleep(2000);
+            //            state = State.TURN;
+            //            break;
+            //        case State.TURN:
+            //            if (this.robot.Drive.Done)
+            //            {
+            //                state = State.DRIVE_BACK_INIT;
+            //                Thread.Sleep(2000);
+            //            }
+            //            break;
+            //        case State.DRIVE_BACK_INIT:
+            //            this.robot.Drive.RunLine((float)2.5, (float)0.2, (float)0.2);
+            //            Thread.Sleep(2000);
+            //            state = State.DRIVE_BACK;
+            //            break;
+            //        case State.DRIVE_BACK:
+            //            if (this.robot.Drive.Done)
+            //            {
+            //                state = State.STOP_INIT;
+            //                Thread.Sleep(2000);
+            //            }
+            //            break;
+
+            //        case State.STOP_INIT:
+            //            ledblink = false;
+            //            state = State.STOP;
+            //            break;
+            //        case State.STOP:
+            //            state = State.WAIT_FOR_START_INIT;
+            //            break;
+            //    }
+            //}
         }
     }
 }

@@ -40,7 +40,7 @@ namespace Testat
             this.runarcView = new RobotView.RunArcView();
             this.radarView = new RobotView.RadarView();
             this.driveView1 = new RobotView.DriveView();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelCount = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonHalt
@@ -124,14 +124,14 @@ namespace Testat
             this.driveView1.Size = new System.Drawing.Size(292, 315);
             this.driveView1.TabIndex = 1;
             // 
-            // label1
+            // labelCount
             // 
-            this.label1.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(350, 390);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 20);
-            this.label1.Text = "0";
-            this.label1.ParentChanged += new System.EventHandler(this.label1_ParentChanged);
+            this.labelCount.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
+            this.labelCount.Location = new System.Drawing.Point(350, 390);
+            this.labelCount.Name = "labelCount";
+            this.labelCount.Size = new System.Drawing.Size(100, 20);
+            this.labelCount.Text = "0";
+            this.labelCount.ParentChanged += new System.EventHandler(this.label1_ParentChanged);
             // 
             // Form1
             // 
@@ -139,7 +139,7 @@ namespace Testat
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(798, 435);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelCount);
             this.Controls.Add(this.buttonStop);
             this.Controls.Add(this.buttonHalt);
             this.Controls.Add(this.driveView1);
@@ -167,6 +167,6 @@ namespace Testat
         private RunArcView runarcView;
         private RadarView radarView;
         private DriveView driveView1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelCount;
     }
 }

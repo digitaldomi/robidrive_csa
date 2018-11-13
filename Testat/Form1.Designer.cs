@@ -32,16 +32,16 @@ namespace Testat
         private void InitializeComponent()
         {
             this.buttonHalt = new System.Windows.Forms.Button();
-            this.consoleView1 = new RobotView.ConsoleView();
             this.buttonStop = new System.Windows.Forms.Button();
+            this.labelCount = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer();
+            this.driveView1 = new RobotView.DriveView();
+            this.consoleView1 = new RobotView.ConsoleView();
             this.commonRunParameters1 = new RobotView.CommonRunParameters();
             this.runlineView = new RobotView.RunLineView();
             this.runturnView = new RobotView.RunTurnView();
             this.runarcView = new RobotView.RunArcView();
             this.radarView = new RobotView.RadarView();
-            this.driveView1 = new RobotView.DriveView();
-            this.labelCount = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer();
             this.SuspendLayout();
             // 
             // buttonHalt
@@ -52,6 +52,36 @@ namespace Testat
             this.buttonHalt.TabIndex = 0;
             this.buttonHalt.Text = "Halt";
             // 
+            // buttonStop
+            // 
+            this.buttonStop.Location = new System.Drawing.Point(248, 381);
+            this.buttonStop.Name = "buttonStop";
+            this.buttonStop.Size = new System.Drawing.Size(70, 40);
+            this.buttonStop.TabIndex = 3;
+            this.buttonStop.Text = "Stop";
+            // 
+            // labelCount
+            // 
+            this.labelCount.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
+            this.labelCount.Location = new System.Drawing.Point(350, 390);
+            this.labelCount.Name = "labelCount";
+            this.labelCount.Size = new System.Drawing.Size(163, 20);
+            this.labelCount.Text = "press start";
+            this.labelCount.ParentChanged += new System.EventHandler(this.label1_ParentChanged);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // driveView1
+            // 
+            this.driveView1.Drive = null;
+            this.driveView1.Location = new System.Drawing.Point(12, 4);
+            this.driveView1.Name = "driveView1";
+            this.driveView1.Size = new System.Drawing.Size(292, 315);
+            this.driveView1.TabIndex = 1;
+            // 
             // consoleView1
             // 
             this.consoleView1.BackColor = System.Drawing.Color.Black;
@@ -60,14 +90,6 @@ namespace Testat
             this.consoleView1.RobotConsole = null;
             this.consoleView1.Size = new System.Drawing.Size(209, 46);
             this.consoleView1.TabIndex = 2;
-            // 
-            // buttonStop
-            // 
-            this.buttonStop.Location = new System.Drawing.Point(248, 381);
-            this.buttonStop.Name = "buttonStop";
-            this.buttonStop.Size = new System.Drawing.Size(70, 40);
-            this.buttonStop.TabIndex = 3;
-            this.buttonStop.Text = "Stop";
             // 
             // commonRunParameters1
             // 
@@ -116,28 +138,6 @@ namespace Testat
             this.radarView.Radar = null;
             this.radarView.Size = new System.Drawing.Size(351, 52);
             this.radarView.TabIndex = 0;
-            // 
-            // driveView1
-            // 
-            this.driveView1.Drive = null;
-            this.driveView1.Location = new System.Drawing.Point(12, 4);
-            this.driveView1.Name = "driveView1";
-            this.driveView1.Size = new System.Drawing.Size(292, 315);
-            this.driveView1.TabIndex = 1;
-            // 
-            // labelCount
-            // 
-            this.labelCount.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
-            this.labelCount.Location = new System.Drawing.Point(350, 390);
-            this.labelCount.Name = "labelCount";
-            this.labelCount.Size = new System.Drawing.Size(100, 20);
-            this.labelCount.Text = "0";
-            this.labelCount.ParentChanged += new System.EventHandler(this.label1_ParentChanged);
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 

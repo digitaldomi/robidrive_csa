@@ -5,7 +5,10 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Net;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using System.Windows.Forms;
@@ -19,8 +22,12 @@ namespace Testat
         RobotConsole rc;
         private bool ledblink;
         private bool currentLedState;
+        private bool fileReceived = false;
+        private bool destinationReached = false;
         int objectcount;
         bool is_running = false;
+        IPAddress guestIP = IPAddress.Parse("123.456.789.012");
+
         enum State { WAIT_FOR_START, WAIT_FOR_START_INIT, DRIVE_FORWARD, DRIVE_FORWARD_INIT, TURN, TURN_INIT, DRIVE_BACK, DRIVE_BACK_INIT, STOP, STOP_INIT};
         private bool trackObject = false;
         #endregion
@@ -55,12 +62,13 @@ namespace Testat
             this.buttonStop.Click += ButtonStop_Click;
 
             Thread blinkLed = new Thread(new ThreadStart(blink_led));
-            Thread drive = new Thread(new ThreadStart(drive_robot));
+            Thread sequence = new Thread(new ThreadStart(drive_robot));
             Thread object_det = new Thread(new ThreadStart(object_detect));
 
-            blinkLed.Start();
-            drive.Start();
-            object_det.Start();
+            sequence.Start();
+            //blinkLed.Start();
+            //drive.Start();
+            //object_det.Start();
 
             this.ledblink = false;
 
@@ -170,10 +178,32 @@ namespace Testat
             }
         }
 
+        private void sequence()
+        {
+            while (true)
+            {
+                getFile();
+                while(fileReceived == false){ Thread.Sleep(10);}
+                drive_robot();
+                while (destinationReached == false) { Thread.Sleep(10); }
+                sendFile();
+                Console.Out.WriteLine("End!");
+                while (true) { Thread.Sleep(100); }
+
+
+            }
+        }
+
         private void drive_robot()
         {
             while (true)
             {
+                //read file and extract comands
+
+                //drive route and log trace
+
+                //stop robot
+
 
                 ledblink = false;
                 objectcount = 0;
@@ -208,6 +238,55 @@ namespace Testat
 
 
 
+        }
+
+        private void getFile()
+        {
+            try {
+                IPAddress ipAddress = Dns.GetHostEntry("localhost").AddressList[0];
+                TcpListener listen = new TcpListener(ipAddress, 8080);
+                listen.Start();
+
+                Console.WriteLine("Warte auf Verbindung auf Port " +
+                    listen.LocalEndpoint + "...");
+                TcpClient client = listen.AcceptTcpClient();
+                Console.WriteLine("Verbindung zu " +
+                    client.Client.RemoteEndPoint);
+                guestIP = IPAddress.Parse(client.Client.RemoteEndPoint.ToString());
+                //TextWriter tw = new StreamWriter(client.GetStream());
+                //tw.Write(DateTime.Now.ToString());
+                //tw.Flush();
+
+                //GET FILE HERE HUERO GERI
+
+                client.Close();
+
+
+
+
+            } catch
+            {
+                Console.Out.WriteLine("Error while connecting...");
+                while (true) { }
+            }
+        }
+
+        private void sendFile()
+        {
+            TcpClient client = new TcpClient(guestIP.ToString(), 8080); // whois von switch
+            StreamWriter outStream = new StreamWriter(client.GetStream());
+            //StreamReader inStream = new StreamReader(client.GetStream());
+            outStream.WriteLine("Hallo das ist ein Test");
+            outStream.Flush();
+            //String line;
+            //while ((line = inStream.ReadLine()) != null)
+            //{
+            //    Console.WriteLine(line);
+            //}
+
+            // SEND FILE HERE
+
+            client.Close();
         }
 
         private void timer1_Tick(object sender, EventArgs e)

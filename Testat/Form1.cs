@@ -27,6 +27,7 @@ namespace Testat
         int objectcount;
         bool is_running = false;
         IPAddress guestIP = IPAddress.Parse("123.456.789.012");
+        string[] lines; //contains orders separated 
 
         enum State { WAIT_FOR_START, WAIT_FOR_START_INIT, DRIVE_FORWARD, DRIVE_FORWARD_INIT, TURN, TURN_INIT, DRIVE_BACK, DRIVE_BACK_INIT, STOP, STOP_INIT};
         private bool trackObject = false;
@@ -61,11 +62,11 @@ namespace Testat
             this.buttonHalt.Click += ButtonHalt_Click;
             this.buttonStop.Click += ButtonStop_Click;
 
-            Thread blinkLed = new Thread(new ThreadStart(blink_led));
-            Thread sequence = new Thread(new ThreadStart(drive_robot));
-            Thread object_det = new Thread(new ThreadStart(object_detect));
+            //Thread blinkLed = new Thread(new ThreadStart(blink_led));
+            Thread sequenceThread = new Thread(new ThreadStart(sequence));
+            //Thread object_det = new Thread(new ThreadStart(object_detect));
 
-            sequence.Start();
+            sequenceThread.Start();
             //blinkLed.Start();
             //drive.Start();
             //object_det.Start();
@@ -178,43 +179,91 @@ namespace Testat
         //    }
         //}
         
-        private void parseFile()
-        {
-
-        }
-
 
         private void sequence()
         {
             while (true)
             {
-                getFile();
-                while(fileReceived == false){ Thread.Sleep(10);}
-                parseFile();
-                drive_robot();
+                String file = "TrackLine 100\n TurnLeft 90\nStart"; //getFile();
+                drive_robot(file);
+
+
+               
+
+                //while(fileReceived == false){ Thread.Sleep(10);}
+                drive_robot(file);
                 while (destinationReached == false) { Thread.Sleep(10); }
                 sendFile();
                 Console.Out.WriteLine("End!");
                 while (true) { Thread.Sleep(100); }
-
-
             }
         }
 
-        private void drive_robot()
+
+
+        
+
+        private void drive_robot(string text)
         {
             while (true)
             {
-                //read file and extract comands
+                String text1 = "TrackLine 1.0\nTrackTurnLeft 90\nTrackTurnRight 90\nTrackArcLeft 90 1.0\nTrackArcRight 90 1.0\nStart";
 
-                //drive route and log trace
+                Console.WriteLine("Reading comands from string...");
+                string[][] orderList = new string[100][];
+                for (int i = 0; i < orderList.GetLength(0); i++)
+                {
+                    orderList[i] = new string[3];
+                }
 
-                //stop robot
+                string currentLine;
+                System.IO.StringReader reader = new System.IO.StringReader(text1); //TODO CHANGE HERE FOR ACTUAL FILE
+                int index = 0;
+                while ((currentLine = reader.ReadLine()) != null)
+                {
+                    orderList[index] = currentLine.Split(' ');
+                    index++;
 
-
-                ledblink = false;
-                objectcount = 0;
+                }
+                Console.WriteLine("Done reading comands, start driving now...");
                 robot.Drive.Position = new PositionInfo(0, 0, 0);
+                int nbrOfComands = index;
+                index = 0;
+                this.robot.Drive.Power = true;
+                while(orderList[index] != null)
+                {
+                    Thread.Sleep(1000);
+                    switch (orderList[index][0])
+                    {
+                        case "TrackLine":
+                            this.robot.Drive.RunLine(float.Parse(orderList[index][1]), 0.3f, 0.5f);
+                            break;
+                        case "TrackTurnRight":
+                            this.robot.Drive.RunTurn(float.Parse(orderList[index][1]), 0.3f, 0.5f);
+                            break;
+                        case "TrackTurnLeft":
+                            this.robot.Drive.RunTurn((-1.0f) * float.Parse(orderList[index][1]), 0.3f, 0.5f);
+                            break;
+                        case "TrackArcLeft":
+                            this.robot.Drive.RunArcLeft(float.Parse(orderList[index][1]), float.Parse(orderList[index][2]), 0.3f, 0.5f);
+                            break;
+                        case "TrackArcRight":
+                            this.robot.Drive.RunArcRight(float.Parse(orderList[index][1]),(-1.0f)* float.Parse(orderList[index][2]), 0.3f, 0.5f);
+                            break;
+                        case "Start":
+                            Console.WriteLine("Last command read");
+                            this.robot.Drive.Power = false;
+                            break;
+                        default:
+                            Console.Write("!!!Error, invalid comand read!!!");
+                            break;
+
+                    }
+                    Thread.Sleep(1000);
+                    while (!this.robot.Drive.Done) { Thread.Sleep(5); }
+                    Thread.Sleep(1000);
+                }
+
 
                 while ((!rc[Switches.Switch2].SwitchEnabled)) { Thread.Sleep(5); }
                 trackObject = true;
@@ -234,17 +283,14 @@ namespace Testat
                 Thread.Sleep(1000);
 
                 while (!this.robot.Drive.Done) { Thread.Sleep(5); }
-                 
+
                 ledblink = false;
                 is_running = false;
                 trackObject = false;
                 while ((rc[Switches.Switch2].SwitchEnabled)) { Thread.Sleep(5); }
-               
+
 
             }
-
-
-
         }
 
         private void getFile()

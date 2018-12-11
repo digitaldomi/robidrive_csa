@@ -4,7 +4,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{6AFDAB0D-95EF-424D-8A49-099ECD40B0FF}">
         <SmartDeviceCSProjectFlavor>
-          <DebuggerIPAddress>192.168.2.17</DebuggerIPAddress>
+          <DebuggerIPAddress>192.168.1.17</DebuggerIPAddress>
           <DebuggerCommandLineArguments>
           </DebuggerCommandLineArguments>
           <ExternalStartApp>\Temp\Testat</ExternalStartApp>

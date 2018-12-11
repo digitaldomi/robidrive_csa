@@ -21,3 +21,8 @@ D:\Dokumente Studium\CSA\Übungen\RobotGit\RobotCtrl\bin\Debug\RobotCtrl.pdb
 D:\Dokumente Studium\CSA\Übungen\RobotGit\RobotCtrl\obj\Debug\RobotCtrl.dll
 D:\Dokumente Studium\CSA\Übungen\RobotGit\RobotCtrl\obj\Debug\RobotCtrl.pdb
 D:\Dokumente Studium\CSA\Übungen\RobotGit\RobotCtrl\obj\Debug\RobotCtrl.csprojResolveAssemblyReference.cache
+C:\Users\Dominic\Source\Repos\digitaldomi\robidrive_csa\RobotCtrl\bin\Debug\RobotCtrl.dll
+C:\Users\Dominic\Source\Repos\digitaldomi\robidrive_csa\RobotCtrl\bin\Debug\RobotCtrl.pdb
+C:\Users\Dominic\Source\Repos\digitaldomi\robidrive_csa\RobotCtrl\obj\Debug\RobotCtrl.csprojResolveAssemblyReference.cache
+C:\Users\Dominic\Source\Repos\digitaldomi\robidrive_csa\RobotCtrl\obj\Debug\RobotCtrl.dll
+C:\Users\Dominic\Source\Repos\digitaldomi\robidrive_csa\RobotCtrl\obj\Debug\RobotCtrl.pdb

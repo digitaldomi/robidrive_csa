@@ -25,3 +25,9 @@ D:\Dokumente Studium\CSA\Übungen\RobotGit\RobotIO\bin\Debug\RobotIO.pdb
 D:\Dokumente Studium\CSA\Übungen\RobotGit\RobotIO\obj\Debug\RobotIO.dll
 D:\Dokumente Studium\CSA\Übungen\RobotGit\RobotIO\obj\Debug\RobotIO.pdb
 D:\Dokumente Studium\CSA\Übungen\RobotGit\RobotIO\obj\Debug\RobotIO.csprojResolveAssemblyReference.cache
+C:\Users\Dominic\Source\Repos\digitaldomi\robidrive_csa\RobotIO\bin\Debug\Lib\GPIOLib.dll
+C:\Users\Dominic\Source\Repos\digitaldomi\robidrive_csa\RobotIO\bin\Debug\RobotIO.dll
+C:\Users\Dominic\Source\Repos\digitaldomi\robidrive_csa\RobotIO\bin\Debug\RobotIO.pdb
+C:\Users\Dominic\Source\Repos\digitaldomi\robidrive_csa\RobotIO\obj\Debug\RobotIO.csprojResolveAssemblyReference.cache
+C:\Users\Dominic\Source\Repos\digitaldomi\robidrive_csa\RobotIO\obj\Debug\RobotIO.dll
+C:\Users\Dominic\Source\Repos\digitaldomi\robidrive_csa\RobotIO\obj\Debug\RobotIO.pdb

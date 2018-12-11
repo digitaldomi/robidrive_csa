@@ -13,3 +13,18 @@ D:\Dokumente Studium\CSA\Übungen\RobotGit\Testat\bin\Debug\RobotIO.pdb
 D:\Dokumente Studium\CSA\Übungen\RobotGit\Testat\bin\Debug\RobotView.pdb
 D:\Dokumente Studium\CSA\Übungen\RobotGit\Testat\obj\Debug\Testat.exe
 D:\Dokumente Studium\CSA\Übungen\RobotGit\Testat\obj\Debug\Testat.pdb
+C:\Users\Dominic\Source\Repos\digitaldomi\robidrive_csa\Testat\bin\Debug\Lib\GPIOLib.dll
+C:\Users\Dominic\Source\Repos\digitaldomi\robidrive_csa\Testat\bin\Debug\Testat.exe
+C:\Users\Dominic\Source\Repos\digitaldomi\robidrive_csa\Testat\bin\Debug\Testat.pdb
+C:\Users\Dominic\Source\Repos\digitaldomi\robidrive_csa\Testat\bin\Debug\RobotCtrl.dll
+C:\Users\Dominic\Source\Repos\digitaldomi\robidrive_csa\Testat\bin\Debug\RobotIO.dll
+C:\Users\Dominic\Source\Repos\digitaldomi\robidrive_csa\Testat\bin\Debug\RobotView.dll
+C:\Users\Dominic\Source\Repos\digitaldomi\robidrive_csa\Testat\bin\Debug\RobotCtrl.pdb
+C:\Users\Dominic\Source\Repos\digitaldomi\robidrive_csa\Testat\bin\Debug\RobotIO.pdb
+C:\Users\Dominic\Source\Repos\digitaldomi\robidrive_csa\Testat\bin\Debug\RobotView.pdb
+C:\Users\Dominic\Source\Repos\digitaldomi\robidrive_csa\Testat\obj\Debug\Testat.csprojResolveAssemblyReference.cache
+C:\Users\Dominic\Source\Repos\digitaldomi\robidrive_csa\Testat\obj\Debug\Testat.Form1.resources
+C:\Users\Dominic\Source\Repos\digitaldomi\robidrive_csa\Testat\obj\Debug\Testat.Properties.Resources.resources
+C:\Users\Dominic\Source\Repos\digitaldomi\robidrive_csa\Testat\obj\Debug\Testat.csproj.GenerateResource.Cache
+C:\Users\Dominic\Source\Repos\digitaldomi\robidrive_csa\Testat\obj\Debug\Testat.exe
+C:\Users\Dominic\Source\Repos\digitaldomi\robidrive_csa\Testat\obj\Debug\Testat.pdb

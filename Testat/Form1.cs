@@ -144,39 +144,45 @@ namespace Testat
             }
         }
 
-        private void object_detect()
+        //private void object_detect()
+        //{
+
+        //    float distance = 0;
+        //    int counter= 0;
+        //    bool object_detected = false;
+        //    while (true)
+        //    {
+        //        if (trackObject)
+        //        {
+        //            Thread.Sleep(50);
+        //            distance = this.robot.Radar.Distance;
+        //            if (distance < 0.7f)
+        //            {
+        //                counter++;
+        //                if (counter == 5 && object_detected == false)
+        //                {
+        //                    objectcount++;
+        //                    object_detected = true;
+        //                }
+        //            }
+        //            else
+        //            {
+        //                object_detected = false;
+        //                counter = 0;
+        //            }
+        //        } else
+        //        {
+        //            objectcount = 0;
+        //            counter = 0;
+        //        }
+        //    }
+        //}
+        
+        private void parseFile()
         {
 
-            float distance = 0;
-            int counter= 0;
-            bool object_detected = false;
-            while (true)
-            {
-                if (trackObject)
-                {
-                    Thread.Sleep(50);
-                    distance = this.robot.Radar.Distance;
-                    if (distance < 0.7f)
-                    {
-                        counter++;
-                        if (counter == 5 && object_detected == false)
-                        {
-                            objectcount++;
-                            object_detected = true;
-                        }
-                    }
-                    else
-                    {
-                        object_detected = false;
-                        counter = 0;
-                    }
-                } else
-                {
-                    objectcount = 0;
-                    counter = 0;
-                }
-            }
         }
+
 
         private void sequence()
         {
@@ -184,6 +190,7 @@ namespace Testat
             {
                 getFile();
                 while(fileReceived == false){ Thread.Sleep(10);}
+                parseFile();
                 drive_robot();
                 while (destinationReached == false) { Thread.Sleep(10); }
                 sendFile();
